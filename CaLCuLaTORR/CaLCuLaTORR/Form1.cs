@@ -17,52 +17,30 @@ namespace CaLCuLaTORR
             InitializeComponent();
         }
 
-        private void plus_Click(object sender, EventArgs e)                                 //PLUS
-        {
-            //Convert.ToDouble(textBox1.Text);
-            double firstvalue = Convert.ToDouble(textBox1.Text);
-            double secondvalue = Convert.ToDouble(textBox2.Text);
-            double result = firstvalue + secondvalue;
-            textBox3.Text = result.ToString();
-        }
-
-        private void delenie_Click(object sender, EventArgs e)                                //DELENIE
+        private void button_Click(object sender, EventArgs e)
         {
             double firstvalue = Convert.ToDouble(textBox1.Text);
             double secondvalue = Convert.ToDouble(textBox2.Text);
-            double result = firstvalue / secondvalue;
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "plus":
+                    result = firstvalue + secondvalue;
+                    break;
+                case "minus":
+                    result = firstvalue - secondvalue;
+                    break;
+                case "umnojenie":
+                    result = firstvalue * secondvalue;
+                    break;
+                case "delenie":
+                    result = firstvalue / secondvalue;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
+
             textBox3.Text = result.ToString();
-        }
-
-
-        private void umnojenie_Click(object sender, EventArgs e)                                   //UMNOJ
-        {
-            double firstvalue = Convert.ToDouble(textBox1.Text);
-            double secondvalue = Convert.ToDouble(textBox2.Text);
-            double result = firstvalue * secondvalue;
-            textBox3.Text = result.ToString();
-        }
-
-        private void minus_Click(object sender, EventArgs e)                                  //MINUS
-        {
-            double firstvalue = Convert.ToDouble(textBox1.Text);
-            double secondvalue = Convert.ToDouble(textBox2.Text);
-            double result = firstvalue - secondvalue;
-            textBox3.Text = result.ToString();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

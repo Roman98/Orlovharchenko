@@ -43,7 +43,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -51,7 +50,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // plus
             // 
@@ -61,7 +59,7 @@
             this.plus.TabIndex = 2;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.plus_Click);
+            this.plus.Click += new System.EventHandler(this.button_Click);
             // 
             // minus
             // 
@@ -71,7 +69,7 @@
             this.minus.TabIndex = 3;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.minus_Click);
+            this.minus.Click += new System.EventHandler(this.button_Click);
             // 
             // umnojenie
             // 
@@ -81,7 +79,7 @@
             this.umnojenie.TabIndex = 4;
             this.umnojenie.Text = "*";
             this.umnojenie.UseVisualStyleBackColor = true;
-            this.umnojenie.Click += new System.EventHandler(this.umnojenie_Click);
+            this.umnojenie.Click += new System.EventHandler(this.button_Click);
             // 
             // delenie
             // 
@@ -91,7 +89,7 @@
             this.delenie.TabIndex = 5;
             this.delenie.Text = "/";
             this.delenie.UseVisualStyleBackColor = true;
-            this.delenie.Click += new System.EventHandler(this.delenie_Click);
+            this.delenie.Click += new System.EventHandler(this.button_Click);
             // 
             // textBox3
             // 
@@ -100,7 +98,6 @@
             this.textBox3.Size = new System.Drawing.Size(123, 20);
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "Ответ:";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Form1
             // 
