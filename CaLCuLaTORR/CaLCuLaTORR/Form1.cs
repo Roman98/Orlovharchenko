@@ -16,30 +16,12 @@ namespace CaLCuLaTORR
         {
             InitializeComponent();
         }
-
         private void button_Click(object sender, EventArgs e)
         {
             double firstvalue = Convert.ToDouble(textBox1.Text);
             double secondvalue = Convert.ToDouble(textBox2.Text);
-            double result;
-            switch (((Button)sender).Name)
-            {
-                case "plus":
-                    result = firstvalue + secondvalue;
-                    break;
-                case "minus":
-                    result = firstvalue - secondvalue;
-                    break;
-                case "umnojenie":
-                    result = firstvalue * secondvalue;
-                    break;
-                case "delenie":
-                    result = firstvalue / secondvalue;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
-
+            ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.CaLCuLaTORR(firstvalue,secondvalue);
             textBox3.Text = result.ToString();
         }
     }
