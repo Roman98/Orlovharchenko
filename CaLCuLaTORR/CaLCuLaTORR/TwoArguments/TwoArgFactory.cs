@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
 
-namespace Calculator
+namespace Calculator.TwoArguments
 {
     public static class TwoArgFactory
     {
@@ -14,9 +13,9 @@ namespace Calculator
                 case "minus":                   
                     return new Minus();
                 case "umnojenie":                    
-                    return new Umnojenie();
+                    return new Multiplication();
                 case "delenie":
-                    return new Delenie();
+                    return new Division();
                 case "Mod":
                     return new Mod();
                 case"Involution":

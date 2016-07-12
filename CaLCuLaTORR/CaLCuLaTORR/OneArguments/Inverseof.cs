@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Calculator
+﻿namespace Calculator.OneArguments
 {
-    public class Inverseof:IOneArgCalculator
+    public class InverseOf:IOneArgCalculator
     {
         public double Calculate(double firstvalue)
         {

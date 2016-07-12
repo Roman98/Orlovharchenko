@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator
+namespace Calculator.TwoArguments
 {
     public class Involution:ITwoArgCalculator
     {

@@ -1,7 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
 
-namespace Calculator
+namespace Calculator.OneArguments
 {
     public class Ln:IOneArgCalculator
     {

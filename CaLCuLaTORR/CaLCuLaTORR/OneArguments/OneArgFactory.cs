@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator
+namespace Calculator.OneArguments
 {
     public static class OneArgFactory
     {
@@ -21,7 +21,7 @@ namespace Calculator
                 case "Cotangens":
                     return new Cotangens();
                 case "Inverseof":
-                    return new Inverseof();
+                    return new InverseOf();
                 case "Factorial":
                     return new Factorial();
                 case "Radical3":

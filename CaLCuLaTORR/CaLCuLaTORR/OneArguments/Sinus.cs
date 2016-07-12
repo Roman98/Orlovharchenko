@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
-namespace Calculator
+namespace Calculator.OneArguments
 {
     public class Sinus:IOneArgCalculator
     {
