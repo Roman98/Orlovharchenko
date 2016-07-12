@@ -1,8 +1,8 @@
-﻿namespace CaLCuLaTORR
+﻿namespace Calculator
 {
     public class Plus : ITwoArgCalculator
     {
-        public double CaLCuLaTORR(double firstvalue, double secondvalue)
+        public double Calculator(double firstvalue, double secondvalue)
         {
             return firstvalue + secondvalue;
         }

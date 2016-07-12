@@ -1,7 +1,7 @@
-﻿namespace CaLCuLaTORR
+﻿namespace Calculator
 {
     public interface ITwoArgCalculator
     {
-        double CaLCuLaTORR(double firstvalue, double secondvalue);
+        double Calculator(double firstvalue, double secondvalue);
     }
 }

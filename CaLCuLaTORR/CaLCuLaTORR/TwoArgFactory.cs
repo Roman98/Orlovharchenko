@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CaLCuLaTORR
+namespace Calculator
 {
     public static class TwoArgFactory
     {

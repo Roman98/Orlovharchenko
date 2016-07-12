@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CaLCuLaTORR
+namespace Calculator
 {
     public partial class Form1 : Form
     {
@@ -21,7 +21,15 @@ namespace CaLCuLaTORR
             double firstvalue = Convert.ToDouble(textBox1.Text);
             double secondvalue = Convert.ToDouble(textBox2.Text);
             ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.CaLCuLaTORR(firstvalue,secondvalue);
+            double result = calculator.Calculator(firstvalue, secondvalue);
+            textBox3.Text = result.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double firstvalue = Convert.ToDouble(textBox1.Text);
+            IOneArgCalculator calculator = OneArgFactory.CreateCalculator(((Button) sender).Name);
+            double result = calculator.Calculator(firstvalue);
             textBox3.Text = result.ToString();
         }
     }
