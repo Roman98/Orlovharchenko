@@ -2,6 +2,6 @@
 {
     public interface IOneArgCalculator
     {
-        double Calculator(double firstvalue);
+        double Calculate(double firstvalue);
     }
 }

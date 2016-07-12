@@ -17,6 +17,10 @@ namespace Calculator
                     return new Umnojenie();
                 case "delenie":
                     return new Delenie();
+                case "Mod":
+                    return new Mod();
+                case"Involution":
+                    return new Involution();
                 default:
                     throw new Exception("Неизвестная операция");
             }

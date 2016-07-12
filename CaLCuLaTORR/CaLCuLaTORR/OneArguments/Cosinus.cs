@@ -4,7 +4,7 @@ namespace Calculator
 {
     public class Cosinus:IOneArgCalculator
     {       
-            public double Calculator(double firstvalue)
+            public double Calculate(double firstvalue)
             {
                 return Math.Cos(firstvalue);
             }

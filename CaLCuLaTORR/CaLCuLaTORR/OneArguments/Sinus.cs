@@ -5,7 +5,7 @@ namespace Calculator
 {
     public class Sinus:IOneArgCalculator
     {
-        public double Calculator(double firstvalue)
+        public double Calculate(double firstvalue)
         {
             return Math.Sin(firstvalue);            
         }

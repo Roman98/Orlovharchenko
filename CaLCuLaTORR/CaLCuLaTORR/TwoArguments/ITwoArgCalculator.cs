@@ -2,6 +2,6 @@
 {
     public interface ITwoArgCalculator
     {
-        double Calculator(double firstvalue, double secondvalue);
+        double Calculate(double firstvalue, double secondvalue);
     }
 }

@@ -21,7 +21,7 @@ namespace Calculator
             double firstvalue = Convert.ToDouble(textBox1.Text);
             double secondvalue = Convert.ToDouble(textBox2.Text);
             ITwoArgCalculator calculator = TwoArgFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculator(firstvalue, secondvalue);
+            double result = calculator.Calculate(firstvalue, secondvalue);
             textBox3.Text = result.ToString();
         }
 
@@ -29,7 +29,7 @@ namespace Calculator
         {
             double firstvalue = Convert.ToDouble(textBox1.Text);
             IOneArgCalculator calculator = OneArgFactory.CreateCalculator(((Button) sender).Name);
-            double result = calculator.Calculator(firstvalue);
+            double result = calculator.Calculate(firstvalue);
             textBox3.Text = result.ToString();
         }
     }
