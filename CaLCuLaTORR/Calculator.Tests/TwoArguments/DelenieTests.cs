@@ -6,12 +6,14 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     public class DelenieTests
     {
-         [Test]
-        public void Delenietests()
+        [TestCase(6, 2, 3)]
+        [TestCase(-2, 4, -0.5)]
+        public void DelenieTest(double firstvalue, double secondvalue, double expected)
         {
             ITwoArgCalculator calculator = new Division();
-            double result = calculator.Calculate(12, 3);
-            Assert.AreEqual(4, result);
+            double result = calculator.Calculate(firstvalue, secondvalue);
+            Assert.AreEqual(expected, result);
         }
+
     }
 }

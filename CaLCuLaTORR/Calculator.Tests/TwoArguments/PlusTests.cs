@@ -6,12 +6,13 @@ namespace Calculator.Tests.TwoArguments
 [TestFixture]
     public class PlusTests
     {
-    [Test]
-    public void PlusTest()
+    [TestCase(6, 2, 8)]
+    [TestCase(-2, 4, 2)]
+    public void PlusTest(double firstvalue,double secondvalue, double expected)
     {
         ITwoArgCalculator calculator = new Plus();
-        double result = calculator.Calculate(4, 5);
-        Assert.AreEqual(9,result);
+        double result = calculator.Calculate(firstvalue, secondvalue);
+        Assert.AreEqual(expected,result);
     }
 
     }

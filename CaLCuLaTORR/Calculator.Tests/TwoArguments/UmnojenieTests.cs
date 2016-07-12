@@ -7,12 +7,14 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     public class UmnojenieTests
     {
-        [Test]
-        public void UmnojenieTest()
+        [TestCase(6, 2, 12)]
+        [TestCase(-2, 4, -8)]
+        public void UmnojenieTest(double firstvalue, double secondvalue, double expected)
         {
             ITwoArgCalculator calculator = new Multiplication();
-            double result = calculator.Calculate(12, 5);
-            Assert.AreEqual(60, result);
+            double result = calculator.Calculate(firstvalue, secondvalue);
+            Assert.AreEqual(expected, result);
         }
+
     }
 }
