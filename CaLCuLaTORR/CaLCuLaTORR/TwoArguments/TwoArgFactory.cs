@@ -4,6 +4,11 @@ namespace Calculator.TwoArguments
 {
     public static class TwoArgFactory
     {
+        /// <summary>
+        /// If you see this, i tell you this is a factory for two arguments.
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static ITwoArgCalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)
