@@ -49,6 +49,7 @@
     <Compile Include="OneArguments\Inverseof.cs" />
     <Compile Include="OneArguments\LgTests.cs" />
     <Compile Include="OneArguments\LnTests.cs" />
+    <Compile Include="OneArguments\OneArgFactoryTests.cs" />
     <Compile Include="OneArguments\Radical3Tests.cs" />
     <Compile Include="OneArguments\RadicalTests.cs" />
     <Compile Include="OneArguments\SinusTests.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="TwoArguments\MinusTests.cs" />
     <Compile Include="TwoArguments\ModTests.cs" />
     <Compile Include="TwoArguments\PlusTests.cs" />
+    <Compile Include="TwoArguments\TwoArgFactoryTests.cs" />
     <Compile Include="TwoArguments\UmnojenieTests.cs" />
   </ItemGroup>
   <ItemGroup>
