@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Calculator.OneArguments;
 using Calculator.TwoArguments;
+using Calculator.SortMass;
 
 namespace Calculator
 {
@@ -41,5 +42,34 @@ namespace Calculator
                 MessageBox.Show("Произошла ошибка: " + exc.Message);
             }
         }
+
+        private void Sort1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] stringArray = Mass.Text.Split(' ');
+                double[] doubleArray = new double[stringArray.Length];
+                for (int i = 0; i < doubleArray.Length; i++)
+                {
+                    doubleArray[i] = Convert.ToDouble(stringArray[i]);
+                }
+
+                ISortMass calculator = SortMassFactory.CreateCalculator(((Button) sender).Name);
+                calculator.Calculate(doubleArray);           //вызов сортировки
+
+                string stringResult = "";
+                for (int i = 0; i < doubleArray.Length; i++)
+                {
+                    stringResult += " " + doubleArray[i];
+                }
+                textBox3.Text = stringResult;
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Произошла ошибка: " + exc.Message);
+            }
+        }
+
+
     }
 }

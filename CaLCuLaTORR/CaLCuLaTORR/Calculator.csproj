@@ -46,6 +46,9 @@
   <ItemGroup>
     <Compile Include="OneArguments\Cosinus.cs" />
     <Compile Include="OneArguments\Cotangens.cs" />
+    <Compile Include="SortMass\ISortMass.cs" />
+    <Compile Include="SortMass\SortMass1.cs" />
+    <Compile Include="SortMass\SortMassFactory.cs" />
     <Compile Include="TwoArguments\Delenie.cs" />
     <Compile Include="OneArguments\Factorial.cs" />
     <Compile Include="Form1.cs">
