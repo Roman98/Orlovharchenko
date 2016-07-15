@@ -69,7 +69,5 @@ namespace Calculator
                 MessageBox.Show("Произошла ошибка: " + exc.Message);
             }
         }
-
-
     }
 }
